@@ -53,3 +53,15 @@ int main(void) {
 
    return 0;
 }
+
+/*
+
+NOTES: The insight in this problem is pandigit numbers can only be of less than 10 digits, as to make a 10 digit number you must use zero, but using zero defys the very definition of pandigit. All pandigit numbers of 9 digits can't be primes as the sum of the digits is (9 * 10) / 2, which is divisible by 3. 
+
+All 9 digit pandigit numbers are divisible by 3, as the sum of the digits will be 45.
+All 8 digit pandigit numbers are divisible by 3, as the sum of the digits will be 36, which again is divisible by 3.
+All 6 digit pandigit numbers are also divisible by 3, as the sum of the digits will be 21.
+So, the highest pandigit number which is also prime must be a 7 digit number
+The strategy here is to start checking from the highest 7 digit pandigit number, and halt till you obtain the prime.
+
+*/
