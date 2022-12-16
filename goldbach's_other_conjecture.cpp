@@ -48,8 +48,7 @@ NOTE ::
 is_prime function checks whether a number is prime in root n time.
 
 is_goldbach function checks whether a number satisfys the conjecture or not.
-This function first finds the nearest prime of the number, and then checks whether the difference of it and the original number is a perfect square or not. If it's not, then it finds the next nearest prime. This happens till the lowest prime i.e 2.
-If for no prime, perfect square exists the function returns false.
+This function first finds the nearest prime of the number, and then checks whether the difference of it and the original number is a perfect square or not. If it's not, then it finds the next nearest prime. This happens till the lowest prime i.e if for no prime perfect square exists, the function returns false.
 
 main function consists of an infinte loop which sends all the composite-odd numbers to  the is_goldbach function. 
 
