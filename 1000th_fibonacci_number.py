@@ -16,5 +16,7 @@ while(i):
     temp = a + b
     a = b
     b = temp
-    if no_of_digits(temp) == 1000: print(i)
+    if no_of_digits(temp) == 1000:
+        print(i)
+        break
     i += 1
